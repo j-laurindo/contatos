@@ -1,12 +1,15 @@
 import { StatusBar, View, StyleSheet } from 'react-native'
 import { Contatos } from './src/telas/Contatos'
-import { Cabecalho } from './src/componentes/Cabecalho'
+import { Configuracoes } from './src/telas/Configuracoes'
+import { Usuarios } from './src/telas/Usuarios'
+import { Inicial } from './src/telas/Inicial'
+
+
 
 export default function App() {
   return (
     <View style={estilos.conteiner}>
       <StatusBar barStyle='default' />
-      <Cabecalho />
       <Contatos />
     </View>
   );

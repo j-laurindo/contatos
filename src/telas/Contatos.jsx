@@ -1,5 +1,6 @@
 import { View, StyleSheet } from "react-native"
 import { useState } from "react";
+import { Cabecalho } from '../componentes/Cabecalho'
 import { Formulario } from '../componentes/Formulario'
 import { Lista } from "../componentes/Lista"
 import uuid from 'react-native-uuid'
@@ -32,6 +33,8 @@ export function Contatos(){
 
 
     return(
+        <>
+        <Cabecalho titulo="Contatos" />
         <View style={estilos.conteiner}>
             <Formulario 
                 adicionar={adicionarContato}
@@ -41,6 +44,7 @@ export function Contatos(){
                 remover={removerContato}
             />
         </View>
+        </>
     )
 }
 
